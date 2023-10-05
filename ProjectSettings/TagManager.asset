@@ -4,18 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - VerticalWallRight
-  - VerticalWallLeft
-  - Roof
-  - Floor
-  - RightWall
-  - LeftWall
-  - Platform1
-  - Platform2
+  - rightPaddle
+  - leftPaddle
   - verticalWall
   - horizontalWall
-  - horizontalWall2
-  - verticalWall2
   layers:
   - Default
   - TransparentFX
