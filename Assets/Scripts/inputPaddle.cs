@@ -7,7 +7,8 @@ public class inputPaddle : MonoBehaviour
 {
     public float speed = 3f;
     public string leftOrRight;
-    
+ 
+   
     // Start is called before the first frame update
     void Start()
     {
