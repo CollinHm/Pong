@@ -6,8 +6,12 @@ TagManager:
   tags:
   - rightPaddle
   - leftPaddle
-  - verticalWall
   - horizontalWall
+  - leftWall
+  - rightWall
+  - player1
+  - player2
+  - player
   layers:
   - Default
   - TransparentFX
