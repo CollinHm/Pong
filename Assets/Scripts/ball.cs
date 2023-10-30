@@ -24,13 +24,13 @@ public class ball : MonoBehaviour
         scoreField.text = leftScore + " - " + rightScore;
         if (leftOrRight == "left") 
         {
-            xSpeed = -3f;
-            ySpeed =  3f;
+            xSpeed = -20f;
+            ySpeed =  5f;
         }
         else if (leftOrRight == "right")
         {
-            xSpeed = 3f;
-            ySpeed = -3f;
+            xSpeed = 20f;
+            ySpeed = -5f;
         }
     }
 
@@ -40,8 +40,8 @@ public class ball : MonoBehaviour
 
        // transform.position = new Vector3(Xposition, Yposition, 0);
        
-        xSpeed = 7f;
-        ySpeed = 3f;
+        xSpeed = 20f;
+        ySpeed = 5f;
     }
 
     // Update is called once per frame
@@ -90,7 +90,7 @@ public class ball : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("player"))
         {
-            xSpeed = xSpeed * -1.1f;
+            xSpeed = xSpeed * -1f;
         }
       
        

@@ -10,6 +10,7 @@ public class Menu_Controller : MonoBehaviour
 
     public Button Singleplayer_Button;
     public Button Multiplayer_Button;
+    public Button SPEED_Button;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,11 @@ public class Menu_Controller : MonoBehaviour
     public void Multiplayer_pongTwoPlayer()
     {
         SceneManager.LoadScene("pongTwoPlayer");
+    }
+
+    public void SPEED_SPEED()
+    {
+        SceneManager.LoadScene("SPEED");
     }
 
 
