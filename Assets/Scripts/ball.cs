@@ -24,7 +24,6 @@ public class ball : MonoBehaviour
     //Horizontal and Vertical speed
     public float xSpeed = 1f;
     public float ySpeed = 1f;
-    private float baseLineSpeed;
     //Reference to text object (has to be linked in Unity)
     public TMP_Text scoreField;
     //Keeping the scores at 0
@@ -45,22 +44,20 @@ public class ball : MonoBehaviour
         if (leftOrRight == "left") 
         {
             //Ball goes right and down
-            xSpeed = -baseLineSpeed;
-            ySpeed = baseLineSpeed;
+            xSpeed = 20;
+            ySpeed = -3;
         }
         else if (leftOrRight == "right")
         {
             //Ball goes left and up
-            xSpeed = -baseLineSpeed;
-            ySpeed = baseLineSpeed;
+            xSpeed = -20;
+            ySpeed = 3;
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        //Set baseline speed
-        baseLineSpeed = xSpeed;
 
         //Set starting x and y position for the ball
        transform.position = new Vector3(Xposition, Yposition, 0);
